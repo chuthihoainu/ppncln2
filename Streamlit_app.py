@@ -1,11 +1,8 @@
 import streamlit as st
+my_code=''
+with open("my_code", "r") as f:
+    content = f.read()
 
-import streamlit as st
-my_code ='https://github.com/chuthihoainu/ppncln2/a0fac08'
-# Nhập mã Python từ file my_code.py
-from my_code import *
+# Hiển thị nội dung file
 
-# Hiển thị kết quả
-
-result = my_function()
-st.write(result)
+st.write(content)

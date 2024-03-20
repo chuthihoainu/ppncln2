@@ -1,10 +1,11 @@
 import streamlit as st
-st.title("hello")
 
+import streamlit as st
+my_code ='
+# Nhập mã Python từ file my_code.py
+from my_code import *
 
-# Mở file Python
-with open("Main_RFM_#.ipynb", "r") as f:
-    content = f.read()
+# Hiển thị kết quả
 
-# Hiển thị nội dung file
-st.code(content, language="python")
+result = my_function()
+st.write(result)

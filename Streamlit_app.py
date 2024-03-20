@@ -1,8 +1,10 @@
+
 import streamlit as st
-my_code='https://github.com/chuthihoainu/ppncln2/a0fac08'
-with open("my_code", "r") as f:
-    content = f.read()
+import pandas as pd
 
-# Hiển thị nội dung file
+# Load the Jupyter Notebook file from GitHub
+url = 'https://raw.githubusercontent.com/your_username/your_repository/main/your_notebook.ipynb'
 
-st.write(content)
+# Display the content of the Jupyter Notebook file
+st.markdown(f"### Displaying Jupyter Notebook from GitHub\n[Click here to view the notebook]({url})")
+streamlit run your_script.py

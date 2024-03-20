@@ -1,2 +1,2 @@
 import streamlit as st
-st.img("download.jpg"
+st.image("download.jpg")

@@ -1,8 +1,17 @@
 
-import streamlit as st
+import nbformat
+from nbconvert.preprocessors import ExecutePreprocessor
 
-# Load the Jupyter Notebook file from GitHub
-url = 'https://github.com/chuthihoainu/ppncln2/blob/master/Main_RFM_3.ipynb'
+# Load the Jupyter Notebook file
+notebook_file = 'Main_RFM_3.ipynb'
+with open(notebook_file) as f:
+    nb = nbformat.read(f, as_version=4)
 
-# Display the content of the Jupyter Notebook file
-st.markdown(f"### Displaying Jupyter Notebook from GitHub\n[Click here to view the notebook]({url})")
+# Execute the notebook
+ep = ExecutePreprocessor(timeout=600, kernel_name='python3')
+ep.preprocess(nb, {'metadata': {'path': ''}})
+
+# Save the executed notebook as a Python script
+output_file = 'executed_notebook.py'
+with open(output_file, 'w') as f:
+    f.write(nbformat.writes(nb))

@@ -1,5 +1,5 @@
 import streamlit as st
-pip install nbformat
+
 st.image("download.jpg")
 st.write("VPANDAS xin chào ạ")
 import streamlit as st

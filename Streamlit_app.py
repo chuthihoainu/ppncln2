@@ -2,10 +2,8 @@ import streamlit as st
 
 st.image("download.jpg")
 st.write("VPANDAS xin chào ạ")
-import streamlit as st
 import requests
 from nbformat import read
-
 # Lấy URL của file Jupyter Notebook
 url = "https://github.com/chuthihoainu/ppncln2/blob/master/Main_RFM_3.ipynb"
 

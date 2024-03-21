@@ -7,7 +7,7 @@ import requests
 from nbformat import read
 
 # Lấy URL của file Jupyter Notebook
-url = "https://raw.githubusercontent.com/username/repo_name/branch_name/path/to/notebook.ipynb"
+url = "https://github.com/chuthihoainu/ppncln2/blob/master/Main_RFM_3.ipynb"
 
 # Gửi yêu cầu GET đến URL để lấy nội dung file Jupyter Notebook
 response = requests.get(url)

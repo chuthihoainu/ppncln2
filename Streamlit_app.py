@@ -37,3 +37,4 @@ else:
 
     # Hiển thị thông báo lỗi
     st.error("Lỗi khi lấy file Jupyter Notebook")
+st run Streamlit_app.py
